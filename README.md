@@ -1,3 +1,12 @@
+---
+title: IMDB Sentiment Analysis
+emoji: 🎬
+colorFrom: blue
+colorTo: indigo
+sdk: docker
+app_port: 8501
+---
+
 # Sentiment Analysis on IMDB Movie Reviews
 
 This project is a deep learning based sentiment analysis application that classifies movie reviews as positive or negative. It uses the IMDB movie review dataset, trains a Bidirectional LSTM model with TensorFlow/Keras, and provides a simple Streamlit web app for interactive predictions.
