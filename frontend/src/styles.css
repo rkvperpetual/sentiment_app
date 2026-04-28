@@ -1,0 +1,183 @@
+:root {
+  color: #172033;
+  background: #f5f7fb;
+  font-family:
+    Inter, ui-sans-serif, system-ui, -apple-system, BlinkMacSystemFont, "Segoe UI", sans-serif;
+  font-synthesis: none;
+  text-rendering: optimizeLegibility;
+}
+
+* {
+  box-sizing: border-box;
+}
+
+body {
+  margin: 0;
+  min-width: 320px;
+  min-height: 100vh;
+}
+
+button,
+textarea {
+  font: inherit;
+}
+
+.app-shell {
+  min-height: 100vh;
+  display: grid;
+  place-items: center;
+  padding: 40px 18px;
+  background:
+    linear-gradient(120deg, rgba(23, 32, 51, 0.08), rgba(9, 98, 120, 0.08)),
+    #f5f7fb;
+}
+
+.workspace {
+  width: min(920px, 100%);
+  display: grid;
+  gap: 22px;
+}
+
+.intro {
+  max-width: 720px;
+}
+
+.eyebrow {
+  margin: 0 0 10px;
+  color: #096278;
+  font-size: 0.78rem;
+  font-weight: 800;
+  letter-spacing: 0;
+  text-transform: uppercase;
+}
+
+h1 {
+  margin: 0;
+  color: #111827;
+  font-size: clamp(2.1rem, 7vw, 4.5rem);
+  line-height: 0.95;
+  letter-spacing: 0;
+}
+
+.summary {
+  margin: 16px 0 0;
+  max-width: 680px;
+  color: #46556f;
+  font-size: 1.04rem;
+  line-height: 1.6;
+}
+
+.analyzer,
+.result {
+  border: 1px solid #d9e0ea;
+  border-radius: 8px;
+  background: rgba(255, 255, 255, 0.88);
+  box-shadow: 0 18px 48px rgba(17, 24, 39, 0.08);
+}
+
+.analyzer {
+  display: grid;
+  gap: 12px;
+  padding: 18px;
+}
+
+label,
+.result-label {
+  color: #56657c;
+  font-size: 0.86rem;
+  font-weight: 700;
+}
+
+textarea {
+  width: 100%;
+  min-height: 180px;
+  resize: vertical;
+  border: 1px solid #cbd5e1;
+  border-radius: 8px;
+  padding: 14px;
+  color: #172033;
+  background: #ffffff;
+  line-height: 1.5;
+}
+
+textarea:focus {
+  border-color: #096278;
+  outline: 3px solid rgba(9, 98, 120, 0.16);
+}
+
+button {
+  min-height: 48px;
+  width: fit-content;
+  border: 0;
+  border-radius: 8px;
+  padding: 0 22px;
+  color: #ffffff;
+  background: #096278;
+  font-weight: 800;
+  cursor: pointer;
+}
+
+button:disabled {
+  cursor: not-allowed;
+  opacity: 0.58;
+}
+
+.result {
+  display: grid;
+  grid-template-columns: repeat(2, minmax(0, 1fr));
+  gap: 14px;
+  padding: 18px;
+}
+
+.result div {
+  display: grid;
+  gap: 6px;
+}
+
+.result strong {
+  color: #111827;
+  font-size: 1.6rem;
+}
+
+.notice {
+  margin: 0;
+  color: #46556f;
+  line-height: 1.5;
+}
+
+.result .notice {
+  grid-column: 1 / -1;
+}
+
+.error {
+  color: #a23131;
+  font-weight: 700;
+}
+
+@media (max-width: 640px) {
+  .app-shell {
+    align-items: start;
+    padding: 26px 14px;
+  }
+
+  .summary {
+    font-size: 0.98rem;
+  }
+
+  .analyzer,
+  .result {
+    padding: 14px;
+  }
+
+  button {
+    width: 100%;
+  }
+
+  .result {
+    grid-template-columns: 1fr;
+  }
+
+  .result strong {
+    font-size: 1.35rem;
+  }
+}

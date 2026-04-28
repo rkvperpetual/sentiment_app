@@ -1,0 +1,18 @@
+{
+  "name": "Sentiment Analysis",
+  "short_name": "Sentiment",
+  "description": "Installable sentiment analysis app with offline response caching.",
+  "start_url": "/",
+  "scope": "/",
+  "display": "standalone",
+  "background_color": "#f5f7fb",
+  "theme_color": "#111827",
+  "icons": [
+    {
+      "src": "/icons/icon.svg",
+      "sizes": "any",
+      "type": "image/svg+xml",
+      "purpose": "any maskable"
+    }
+  ]
+}

@@ -1,0 +1,7 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512" role="img" aria-label="Sentiment app icon">
+  <rect width="512" height="512" rx="96" fill="#111827"/>
+  <circle cx="182" cy="206" r="34" fill="#72d2c7"/>
+  <circle cx="330" cy="206" r="34" fill="#72d2c7"/>
+  <path d="M148 310c25 48 65 72 108 72s83-24 108-72" fill="none" stroke="#f8fafc" stroke-width="34" stroke-linecap="round"/>
+  <path d="M112 92h288c31 0 56 25 56 56v216c0 31-25 56-56 56H258l-84 54c-15 10-35-1-35-19v-35h-27c-31 0-56-25-56-56V148c0-31 25-56 56-56z" fill="none" stroke="#f8fafc" stroke-width="24"/>
+</svg>
