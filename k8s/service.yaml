@@ -4,7 +4,7 @@ metadata:
   name: sentiment-app
   namespace: sentiment-app
 spec:
-  type: ClusterIP
+  type: LoadBalancer
   selector:
     app: sentiment-app
   ports:
